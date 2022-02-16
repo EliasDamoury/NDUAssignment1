@@ -25,8 +25,8 @@ header nav.myNav{
 
 /*Changing the width of the logo image */
 header nav.myNav a img.CTlogoImg{
-    width: 4rem;
-    padding-top: 1em;
+    width: 6rem;
+    padding-top: 2.5em;
 }
 
 /*Adjusting the nav menu */
@@ -34,14 +34,13 @@ header nav.myNav a img.CTlogoImg{
 header nav.myNav ul.menuParent{
     width:35%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 header nav.myNav ul.menuParent li.menuItems{
     list-style: none;
     height: 100%;
     width: 100%;
-
 }
 
 header nav.myNav ul.menuParent li.menuItems a{
@@ -49,7 +48,7 @@ header nav.myNav ul.menuParent li.menuItems a{
     font-size: 1.3rem;
     text-decoration: none;
     text-align: center;
-    padding-top: 1.6rem;
+    padding: 0.8rem;
     display: block;
     height: 100%;
     color:#f3eff5;
@@ -96,6 +95,8 @@ span.specialWords{
 
     header nav.myNav ul.menuParent {
         width: 35%;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     header nav.myNav ul.menuParent li.menuItems a{
