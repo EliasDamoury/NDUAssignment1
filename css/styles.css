@@ -1,0 +1,114 @@
+/*The design is a mobile first design*/
+/*Designed By Elias Damoury*/
+/*special Thanks to Dr Tony Habib*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Giving the default font*/
+body{
+    font-family: 'Mukta', sans-serif;
+    background-color: #f3eff5;
+}
+
+
+/*Adjusting the nav parent*/
+
+header nav.myNav{
+    background-color: #0d0a0b;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Changing the width of the logo image */
+header nav.myNav a img.CTlogoImg{
+    width: 4rem;
+    padding-top: 1em;
+}
+
+/*Adjusting the nav menu */
+
+header nav.myNav ul.menuParent{
+    width:35%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav.myNav ul.menuParent li.menuItems{
+    list-style: none;
+    height: 100%;
+    width: 100%;
+
+}
+
+header nav.myNav ul.menuParent li.menuItems a{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1.6rem;
+    display: block;
+    height: 100%;
+    color:#f3eff5;
+    transition: color 500ms, background-color 700ms;
+}
+
+/*Making the animation work when users hover*/
+header nav.myNav ul.menuParent li.menuItems a:hover{
+    color:#0d0a0b ;
+    background-color: #72b01d;
+}
+
+/*Adjusting the sections*/
+section.pageContent{
+    padding-left: 5%;
+    padding-top: 1.5rem;
+}
+
+section.pageContent h1.centerMsg{
+    font-size: 2.25em;
+}
+
+section.pageContent p.smallDescription{
+    padding-top: 1rem;
+    font-size: 1.3rem;
+}
+
+/*Adding some special css for a span which might be used often*/
+span.specialWords{
+    color:#72b01d;
+    font-weight: bold;
+}
+
+/*For large screens such as Laptops*/
+@media only screen and (min-width: 960px) {
+
+    /*Changing the width of the logo image */
+    header nav.myNav a img.CTlogoImg{
+        width: 5rem;
+        padding-top: 1em;
+    }
+
+    /*Adjusting the nav menu */
+
+    header nav.myNav ul.menuParent {
+        width: 35%;
+    }
+
+    header nav.myNav ul.menuParent li.menuItems a{
+        font-size: 1.5rem;
+        padding-top: 1.75rem;
+    }
+
+    /*Adjusting the sections*/
+    section.pageContent h1.centerMsg{
+        font-size: 2.75em;
+    }
+    section.pageContent p.smallDescription{
+        font-size: 1.7rem;
+    }
+}
+
